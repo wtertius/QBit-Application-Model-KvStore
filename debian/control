@@ -1,12 +1,14 @@
-Source: libqbit-application-model-kvstore-perl
+Source: libtertiusqbit-application-model-kvstore-perl
 Section: perl
 Priority: extra
-Maintainer: Sergei Svistunov <sergei-svistunov@yandex.ru>
-Build-Depends: debhelper (>= 8.0.0), perl, libqbit-perl, libqbit-application-perl, libqbit-application-model-db-perl
+Maintainer: Dmitry Lukiyanchuk <wtertius@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), perl, libtertiusqbit-perl, libtertiusqbit-application-perl, libtertiusqbit-application-model-db-perl
 Standards-Version: 3.9.4
 
-Package: libqbit-application-model-kvstore-perl
+Package: libtertiusqbit-application-model-kvstore-perl
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, ${perl:Depends}, perl, libqbit-perl, libqbit-application-perl, libqbit-application-model-db-perl
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${perl:Depends}, perl, libtertiusqbit-perl, libtertiusqbit-application-perl, libtertiusqbit-application-model-db-perl
+Conflicts: libqbit-application-model-kvstore-perl
+Replaces: libqbit-application-model-kvstore-perl
 Description: Key/Value store.
  Key/Value store.
